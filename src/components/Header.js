@@ -84,6 +84,10 @@ const RightMenu = styled.div`
         text-transform: uppercase;
         margin-right: 10px;
     }
+    
+    @media(max-width: 460px) {
+        font-size: 9.5px;
+    }
 `;
 
 const CustomMenu = styled(MenuIcon)`
