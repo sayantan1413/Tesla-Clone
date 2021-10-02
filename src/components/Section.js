@@ -88,5 +88,6 @@ const DownArrow = styled.img`
 `;
 
 const Button = styled.div`
-
+    display: flex;
+    flex-direction: column;
 `;

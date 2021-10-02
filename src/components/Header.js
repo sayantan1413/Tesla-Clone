@@ -21,7 +21,7 @@ function Header() {
 
             <RightMenu>
                 <a href="#">Shop</a>
-                <a href="#">Tesla Account</a>
+                <a href="#">Account</a>
                 <CustomMenu onClick={() => setBurgerStatus(true)}/>
             </RightMenu>
 
@@ -36,8 +36,8 @@ function Header() {
                 <li><a href="#">Used Inventory</a></li>
                 <li><a href="#">Trade-in</a></li>
                 <li><a href="#">CyberTruck</a></li>
-                <li><a href="#">Existing Inventory</a></li>
-                <li><a href="#">Existing Inventory</a></li>
+                <li><a href="#">Find Us</a></li>
+                <li><a href="#">Support</a></li>
             </BurgerNav>
         </Container>
     )
@@ -69,7 +69,6 @@ const Menu = styled.div`
 
     a {
         font-weight: 600;
-        text-transform: uppercase;
         padding: 0 10px;
         flex-wrap: nowrap;
     }
@@ -81,12 +80,11 @@ const RightMenu = styled.div`
 
     a {
         font-weight: 600;
-        text-transform: uppercase;
         margin-right: 10px;
     }
     
     @media(max-width: 460px) {
-        font-size: 9.5px;
+        font-size: 15px;
     }
 `;
 
