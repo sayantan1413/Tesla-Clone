@@ -85,21 +85,21 @@ const Menu = styled.div`
             &:nth-child(1):hover~.animation{
                 left: 23.4rem;
                 background-color: rgb(0,0,0,0.1);
-        }    
+                }    
             
             &:nth-child(2):hover~.animation{
                 left: 29.5rem;
-                    background-color: rgb(0,0,0,0.1);
+                background-color: rgb(0,0,0,0.1);
                 }
     
             &:nth-child(3):hover~.animation{
                 left: 35.4rem;
-                    background-color: rgb(0,0,0,0.1);
+                background-color: rgb(0,0,0,0.1);
                 }
     
             &:nth-child(4):hover~.animation{
                 left: 41.5rem;
-                    background-color: rgb(0,0,0,0.1);
+                background-color: rgb(0,0,0,0.1);
                 }
     
             &:nth-child(5):hover~.animation{
