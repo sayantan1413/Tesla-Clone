@@ -15,8 +15,9 @@ function Header() {
             </a>
             <Menu>
             {cars && cars.map((car, index) => 
-                <a key={ index } href="#">{car}</a>
+                <li><a key={ index } href="#">{car}</a></li>
             )}
+            <div className="animation"></div>
             </Menu>
 
             <RightMenu>
@@ -59,15 +60,61 @@ const Container = styled.div`
 `;
 
 const Menu = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
     @media(max-width: 768px) {
         display: none;
     }
 
-    a {
+    .animation{
+        width: 100px;
+        position: absolute;
+        top: 12px;
+        z-index: -100;
+        height: 35px;
+        transition: all .5s ease 0s;
+        border-radius: 12px;
+    }
+    
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px;
+            border-radius: 12px;
+            cursor: pointer;
+            position: relative;
+    
+            &:nth-child(1):hover~.animation{
+                left: 23.4rem;
+                background-color: rgb(0,0,0,0.1);
+        }    
+            
+            &:nth-child(2):hover~.animation{
+                left: 29.5rem;
+                    background-color: rgb(0,0,0,0.1);
+                }
+    
+            &:nth-child(3):hover~.animation{
+                left: 35.4rem;
+                    background-color: rgb(0,0,0,0.1);
+                }
+    
+            &:nth-child(4):hover~.animation{
+                left: 41.5rem;
+                    background-color: rgb(0,0,0,0.1);
+                }
+    
+            &:nth-child(5):hover~.animation{
+                left: 48.4rem;
+                background-color: rgb(0,0,0,0.1);
+                }
+            
+            &:nth-child(6):hover~.animation{
+                width: 110px;
+                left: 56rem;
+                background-color: rgb(0,0,0,0.1);
+                }
+        }
+
+     a {
         font-weight: 600;
         padding: 0 10px;
         flex-wrap: nowrap;
