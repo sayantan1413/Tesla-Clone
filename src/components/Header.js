@@ -14,13 +14,10 @@ function Header() {
                 <img src="./images/logo.svg" alt="" />
             </a>
             <Menu>
-            <li><a href="#">Model S</a></li>
-                <li><a href="#">Model Y</a></li>
-                <li><a href="#">Model A</a></li>
-                <li><a href="#">Model B</a></li>
-                <li><a href="#">Solar Roof</a></li>
-                <li><a href="#">Solar Panel</a></li>
-                <div className="animation"></div>
+            {cars && cars.map((car, index) => 
+                <li><a key={ index } href="#">{car}</a></li>
+            )}
+            <div className="animation"></div>
             </Menu>
 
             <RightMenu>
@@ -86,33 +83,33 @@ const Menu = styled.div`
             position: relative;
     
             &:nth-child(1):hover~.animation{
-                left: 21rem;
+                left: 23.4rem;
                 background-color: rgb(0,0,0,0.1);
         }    
             
             &:nth-child(2):hover~.animation{
-                left: 27rem;
+                left: 29.5rem;
                     background-color: rgb(0,0,0,0.1);
                 }
     
             &:nth-child(3):hover~.animation{
-                left: 33rem;
+                left: 35.4rem;
                     background-color: rgb(0,0,0,0.1);
                 }
     
             &:nth-child(4):hover~.animation{
-                left: 39.3rem;
+                left: 41.5rem;
                     background-color: rgb(0,0,0,0.1);
                 }
     
             &:nth-child(5):hover~.animation{
-                left: 46rem;
+                left: 48.4rem;
                 background-color: rgb(0,0,0,0.1);
                 }
             
             &:nth-child(6):hover~.animation{
                 width: 110px;
-                left: 53rem;
+                left: 56rem;
                 background-color: rgb(0,0,0,0.1);
                 }
         }
